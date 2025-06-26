@@ -1,0 +1,35 @@
+[versions]
+agp = "8.9.1"
+appcompatVersion = "1.6.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+camera = "1.3.4"
+exo = "2.19.1"
+[libraries]
+appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+camera-core = { module = "androidx.camera:camera-core", version.ref = "camera" }
+camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "camera" }
+camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "camera" }
+camera-view = { module = "androidx.camera:camera-view", version.ref = "camera" }
+camera-video = { module = "androidx.camera:camera-video", version.ref = "camera" }
+camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "camera" }
+
+exo-core = { module = "com.google.android.exoplayer:exoplayer-core", version.ref = "exo" }
+exo-ui = { module = "com.google.android.exoplayer:exoplayer-ui", version.ref = "exo" }
+exo-dash = { module = "com.google.android.exoplayer:exoplayer-dash", version.ref = "exo" }
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

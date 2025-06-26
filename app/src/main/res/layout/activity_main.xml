@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnTestCameraX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test CameraX (Preview &amp; Capture)" />
+
+    <Button
+        android:id="@+id/btnRecordVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Record Video (Camera &amp; MediaRecorder)" />
+
+
+    <Button
+        android:id="@+id/btnPlayVideoExoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Play Video (ExoPlayer)" />
+
+    <Button
+        android:id="@+id/btnPlayVideoVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Play Video (VideoView)" />
+
+    <Button
+        android:id="@+id/btnRecordAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Record Audio (MediaRecorder)" />
+
+    <Button
+        android:id="@+id/btnPlayAudioMediaPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Play Audio (MediaPlayer)" />
+
+    <Button
+        android:id="@+id/btnPlayAudioSoundPool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Play Sound Effect (SoundPool)" />
+
+
+</LinearLayout>
