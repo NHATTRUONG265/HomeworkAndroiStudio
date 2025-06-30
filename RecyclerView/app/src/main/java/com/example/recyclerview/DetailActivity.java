@@ -1,5 +1,7 @@
 package com.example.recyclerview;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget. ImageView;
@@ -57,6 +59,34 @@ public class DetailActivity extends AppCompatActivity {
             viewedEditor.apply();
         });
 
+        Button callButton = findViewById(R.id.callButton);
+        Button mapButton = findViewById(R.id.mapButton);
+        Button webButton = findViewById(R.id.webButton);
+
+        callButton.setOnClickListener(v -> {
+            if (food != null && food.getPhone() != null) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + food.getPhone()));
+                startActivity(intent);
+            }
+        });
+
+        mapButton.setOnClickListener(v -> {
+            if (food != null && food.getAddress() != null) {
+                // Dùng Uri geo với truy vấn địa chỉ
+                Uri gmmIntentUri = Uri.parse("geo:0,0?q=" + Uri.encode(food.getAddress()));
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                startActivity(mapIntent);
+            }
+        });
+
+        webButton.setOnClickListener(v -> {
+            if (food != null && food.getWebsite() != null) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(food.getWebsite()));
+                startActivity(intent);
+            }
+        });
     }
 }
 

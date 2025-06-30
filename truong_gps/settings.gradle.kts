@@ -19,9 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MultimediaApis"
-include(":app")
-include(":app")
-include(":app")
+rootProject.name = "gps"
 include(":app")
  
